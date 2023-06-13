@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Clinic Event</title>
+    <link rel="icon" type="image/png" href="images/logo1.png" />
+    <link rel="stylesheet" href="chatMsg.css">
+
+    <!-- font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Add FAQ</h3>
+            <div class="name">
+                <i class="fa fa-question-circle"></i>
+                <input type="text" placeholder="Question" id="que">
+            </div>
+
+            <div class="message-box">
+                <textarea id="ans" cols="30" rows="5" placeholder="Answer"></textarea>
+            </div>
+
+            <div class="button">
+                <button type="button" id="submitData" name="submitData" class="button button">Add FAQ</button>
+            </div>
+            <div class="message">
+                <div class="success" id="success">Your Event Successfully Add!</div>
+                <div class="danger" id="danger">Feilds Can't be Empty!</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="chat.js"></script>
+</body>
+
+</html>
+
+<script type="module">
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+    import { getFirestore, setDoc, addDoc, doc, collection} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+
+
+    // Your web app's Firebase configuration
+     const firebaseConfig = {
+            apiKey: "AIzaSyDcbgNq_rdZbYh23sO_3xoNOfq8YNs1iXg",
+            authDomain: "soil-monitoring-system-e4988.firebaseapp.com",
+            databaseURL: "https://soil-monitoring-system-e4988-default-rtdb.firebaseio.com",
+            projectId: "soil-monitoring-system-e4988",
+            storageBucket: "soil-monitoring-system-e4988.appspot.com",
+            messagingSenderId: "666923002533",
+            appId: "1:666923002533:web:f36904142d86e129233b4c",
+            measurementId: "G-9395SHGK5D"
+        };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    // Initialize Cloud Firestore and get a reference to the service
+    const db = getFirestore(app);
+    const analytics = getAnalytics(app);
+
+
+
+    submitData.addEventListener('click', (e) => {
+        var que1 = document.getElementById('que').value;
+        var ans1 = document.getElementById('ans').value;
+
+
+        setDoc(doc(db, "FAQ", que1), {
+            Question: que1,
+            Answer: ans1
+
+        }).then(() => {
+
+             window.close();
+
+
+        });
+
+    });
+
+
+</script>
