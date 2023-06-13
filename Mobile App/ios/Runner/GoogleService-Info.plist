@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>666923002533-6d6j7htrh5fuadsfc1lhmrlcrtif8rd3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.666923002533-6d6j7htrh5fuadsfc1lhmrlcrtif8rd3</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>666923002533-tnojbjd61cer0k8tgd5u1ajmaqrem3gh.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDThWPodLa-CeEFLPUt2E0TH5lfbrwhzyI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>666923002533</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.soilApp</string>
+	<key>PROJECT_ID</key>
+	<string>soil-monitoring-system-e4988</string>
+	<key>STORAGE_BUCKET</key>
+	<string>soil-monitoring-system-e4988.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:666923002533:ios:080a581844d6d6cd233b4c</string>
+	<key>DATABASE_URL</key>
+	<string>https://soil-monitoring-system-e4988-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

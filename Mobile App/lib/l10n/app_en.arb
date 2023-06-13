@@ -1,0 +1,24 @@
+{
+    "language" : "English",
+    "find" : "Find Out More",
+    "@language" :{
+        "description":"The current Language"
+    },
+    "home":"Home",
+    "temp":"Temperature",
+    "humi":"Humidity",
+    "soil":"Soil",
+    "temp":"Temp",
+    "mois":"Moisture",
+    "values":"Values",
+    "solenoid":"Soleniod",
+    "valve":"Valve",
+    "wel":"Welcome to your farm",
+    "qa":"Q&A",
+    "faq":"FAQ",
+    "logout":"Logout",
+
+    "@home": {
+        "find":"Find Out More"
+    }
+}
